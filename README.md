@@ -1,5 +1,5 @@
 # SQL
-David completed a customer retention project for a fictional movie rental company's move to the streaming market. 
+David completed a simulated customer retention project for a fictional movie rental company's move to the streaming market. 
 
 David's final project was evaluated on his ability to:
 
