@@ -1,4 +1,4 @@
-David formulated the below query to return the total number of customers and revenue by country. He then produced a visualization of the results in https://public.tableau.com/app/profile/datawarrior99/viz/RockbusterCustomersandRevenue/Dashboard1
+David formulated the below query to return the total number of customers and revenue by country. He then produced a visualization of the results in Tableau.
 
 SELECT country,
        COUNT(A.customer_id) AS customer_count,
@@ -9,4 +9,8 @@ INNER JOIN city C ON B.city_id = C.city_id
 INNER JOIN country D ON C.country_ID = D.country_ID
 INNER JOIN payment E ON a.customer_id = E.customer_id
 GROUP BY country
+
+The visualizaiton can be found here:
+
+https://public.tableau.com/app/profile/datawarrior99/viz/RockbusterCustomersandRevenue/Dashboard1
 
