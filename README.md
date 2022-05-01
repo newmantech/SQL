@@ -39,7 +39,6 @@ David used a data set that containing information about Rockbuster’s film inve
 
 Project Deliverables
 
-Final Analysis Criteria
 David's final project was evaluated on his ability to:
 ● Write moderately complex SQL queries to answer business questions.
 ● Present SQL results to business managers by creating visualizations and telling
