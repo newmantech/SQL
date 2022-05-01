@@ -1,5 +1,5 @@
 # SQL
-A customer retention project for a fictional movie rental company's move to streaming.
+David completed a customer retention project for a fictional movie rental company's move to the streaming market.
 
 Project Introduction
 
