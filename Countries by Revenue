@@ -1,4 +1,5 @@
-David formulated the below query to return the total number of customers and revenue by country. He then produced a visualization of the results in [Tableau](https://public.tableau.com/app/profile/datawarrior99/viz/RockbusterCustomersandRevenue/Dashboard1).
+David formulated the below query to return the total number of customers and revenue by country. He then produced a visualization of the results in [Tableau](https://public.tableau.com/app/profile/datawarrior99/viz/RockbusterCustomersandRevenue/Dashboard1)
+
 
 SELECT country,
        COUNT(A.customer_id) AS customer_count,
