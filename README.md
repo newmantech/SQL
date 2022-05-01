@@ -1,5 +1,15 @@
 # SQL
-David completed a customer retention project for a fictional movie rental company's move to the streaming market.
+David completed a customer retention project for a fictional movie rental company's move to the streaming market. 
+
+David's final project was evaluated on his ability to:
+
+● Write moderately complex SQL queries to answer business questions.
+● Present SQL results to business managers by creating visualizations and telling
+a compelling story.
+● Present SQL results to technical colleagues using Excel and by creating a
+data dictionary.
+● Create a professional project to add to a portfolio that could be shown to
+employers.
 
 Project Introduction
 
@@ -35,18 +45,7 @@ To answer the questions posed by the different departments, David queried the da
 
 Data Set
 
-David used a data set that containing information about Rockbuster’s film inventory, customers, and payments, among other things. He firsd needed to load the data set into the PostgreSQL database. 
-
-Project Deliverables
-
-David's final project was evaluated on his ability to:
-● Write moderately complex SQL queries to answer business questions.
-● Present SQL results to business managers by creating visualizations and telling
-a compelling story.
-● Present SQL results to technical colleagues using Excel and by creating a
-data dictionary.
-● Create a professional project to add to a portfolio that could be shown to
-employers.
+David used a data set that containing information about Rockbuster’s film inventory, customers, and payments, among other things. He first needed to load the data set into the PostgreSQL database. 
 
 Learning Goals
 
