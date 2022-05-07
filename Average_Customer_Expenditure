@@ -1,0 +1,32 @@
+David formulated a query to calculate the average total payments per customer in the top ten cities. He then converted the query to a Common Table Expression (CTE) and compared the performance of the two queries. The CTE query appeared to be more efficient.
+
+Original:
+
+SELECT AVG (total_amount_paid.total_paid) AS average FROM(SELECT B. customer_id, B. first_name, B. 
+last_name, D. city, E. country, SUM(amount) AS total_paid
+FROM payment A
+INNER JOIN customer B ON A.customer_id = B.customer_id
+INNER JOIN address C ON B.address_id = C.address_id
+INNER JOIN city D ON C.city_id =D. city_id
+INNER JOIN country E ON D. country_id=E.country_id
+WHERE city IN ('Aurora', 'Atlixco', 'Xintai', 'Adoni', 'Dhule', 'Kurashki', 'Pingxiang', 'Sivas', 'Celaya', 'So 
+Leopoldo')
+GROUP BY B. customer_id, B. first_name, B. last_name, D. city, E. country
+ORDER BY SUM(amount) Desc
+LIMIT 5) AS total_amount_paid
+
+CTE version:
+
+WITH category_name_cte (customer_id, first_name, last_name, city, country, total_paid) AS
+ (SELECT B. customer_id, B. first_name, B. last_name, D. city, E. country, SUM(amount) AS total_paid
+FROM payment A
+INNER JOIN customer B ON A.customer_id = B.customer_id
+INNER JOIN address C ON B.address_id = C.address_id
+INNER JOIN city D ON C.city_id =D. city_id
+INNER JOIN country E ON D. country_id=E.country_id
+WHERE city IN ('Aurora', 'Atlixco', 'Xintai', 'Adoni', 'Dhule', 'Kurashki', 'Pingxiang', 'Sivas', 'Celaya', 'So 
+Leopoldo')
+GROUP BY B. customer_id, B. first_name, B. last_name, D. city, E. country
+ORDER BY SUM(amount) Desc
+LIMIT 5)
+SELECT AVG (category_name_cte.total_paid) FROM category_name_cte
